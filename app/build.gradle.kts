@@ -52,6 +52,7 @@ android {
 
 dependencies {
     val composeBom = platform("androidx.compose:compose-bom:2024.09.03")
+    implementation(platform("com.google.firebase:firebase-bom:33.5.1"))
     implementation(composeBom)
     androidTestImplementation(composeBom)
     implementation("androidx.compose.material3:material3")
@@ -62,7 +63,6 @@ dependencies {
     implementation("androidx.compose.material3.adaptive:adaptive")
     implementation("androidx.activity:activity-compose:1.9.2")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.5")
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
